@@ -6,9 +6,7 @@
    MULTIPLAYER
 ===================== */
 
-const socket =
-io(
-);
+io("backend-url")
 
 let roomCode =
 null;
