@@ -8,7 +8,6 @@
 
 const socket =
 io(
-"https://chessserver-ilfv.onrender.com"
 );
 
 let roomCode =
