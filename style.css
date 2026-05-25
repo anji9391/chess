@@ -611,13 +611,9 @@ popupFade
 .3s ease;
 }
 .seo-text {
-  text-align: center;
-  color: rgba(255,255,255,0.65);
-  font-size: 12px;
-  padding: 8px;
-  margin-top: 10px;
-}
-
-.seo-text p {
-  margin: 0;
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
