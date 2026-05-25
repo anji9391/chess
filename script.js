@@ -6,11 +6,12 @@
    MULTIPLAYER
 ===================== */
 
-const socket =
-io(
-"https://chessserver-production-6d46.up.railway.app"
+const socket = io(
+  "https://chessserver-production-6d46.up.railway.app",
+  {
+    transports: ["websocket", "polling"],
+  }
 );
-
 let roomCode =
 null;
 
