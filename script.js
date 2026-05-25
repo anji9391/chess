@@ -7,7 +7,9 @@
 ===================== */
 
 const socket =
-io();
+io(
+"https://chessserver-ilfv.onrender.com"
+);
 
 let roomCode =
 null;
