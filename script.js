@@ -8,7 +8,7 @@
 
 const socket =
 io(
-"chessserver-production-6d46.up.railway.appchessserver-production-6d46.up.railway.app"
+"https://chessserver-production-6d46.up.railway.app"
 );
 
 let roomCode =
