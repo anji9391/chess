@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Neon Chess</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- TITLE -->
+  <h1>NEON CHESS</h1>
+
+  <!-- TOP CONTROLS -->
+  <div class="top-controls">
+
+    <select id="gameMode">
+      <option value="2player">
+        2 Players
+      </option>
+
+      <option value="bot">
+        Vs Bot
+      </option>
+    </select>
+
+    <select id="difficulty">
+      <option value="easy">
+        Beginner
+      </option>
+
+      <option value="medium">
+        Intermediate
+      </option>
+
+      <option value="hard">
+        Hard
+      </option>
+    </select>
+
+  </div>
+
+  <!-- INFO -->
+  <div class="info-row">
+
+    <div class="info-box">
+      White
+    </div>
+
+    <div
+      class="turn-box"
+      id="turnText"
+    >
+      White's Turn
+    </div>
+
+    <div class="info-box">
+      Black
+    </div>
+
+  </div>
+
+ <!-- GAME MESSAGE -->
+<div
+  id="gameMessage"
+  class="game-message"
+></div>
+
+<div
+  id="checkmateOverlay"
+  class="checkmate-overlay"
+>
+
+  <div
+    id="winnerMessage"
+    class="winner-message"
+  >
+  </div>
+
+</div>
+
+<!-- BOARD -->
+<div
+  class="board"
+  id="board"
+></div>
+
+  <!-- BUTTONS -->
+  <div class="button-row">
+
+    <button
+      class="btn undo"
+      id="undoBtn"
+    >
+      Undo
+    </button>
+
+    <button
+      class="btn reset"
+      id="resetBtn"
+    >
+      Reset
+    </button>
+
+  </div>
+
+  <!-- ROOM -->
+  <div class="room-box">
+
+    <h3>Create Room</h3>
+
+   <input
+  type="text"
+  placeholder="Room Code"
+  maxlength="5"
+  autocomplete="off"
+>
+    <div class="room-actions">
+
+<button class="join-btn">
+Join
+</button>
+
+<button
+class="exit-btn"
+id="exitRoom"
+>
+✕
+</button>
+
+</div>
+<p id="networkStatus">
+🔴 Offline
+</p>
+
+  </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
